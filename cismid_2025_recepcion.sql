@@ -39,7 +39,7 @@ CREATE TABLE `recepcion` (
   `ubicacion_proyecto` varchar(245) CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `fecha_codigo_solicitud` datetime DEFAULT NULL,
   `solicitante_codigo_solicitud` varchar(45) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
-  `fecha_pobable_entrega_informe` date DEFAULT NULL,
+  `fecha_probable_entrega_informe` date DEFAULT NULL,
   PRIMARY KEY (`id_recepcion`),
   UNIQUE KEY `codigo_recepcion_UNIQUE` (`codigo_recepcion`),
   KEY `fk_personal_recepcion_idx` (`personal_recepcion`),

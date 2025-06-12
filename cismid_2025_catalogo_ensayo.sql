@@ -31,12 +31,12 @@ CREATE TABLE `catalogo_ensayo` (
   `norma_ensayo` varchar(145) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `precio_ensayo` decimal(10,2) DEFAULT NULL,
   `descripcion` text COLLATE utf8mb3_unicode_ci,
-  `fecha_aprovacion` date DEFAULT NULL,
-  `responsable_aprovacion` int DEFAULT NULL,
+  `fecha_aprobacion` date DEFAULT NULL,
+  `responsable_aprobacion` int DEFAULT NULL,
   PRIMARY KEY (`id_catalogo_ensayo`),
   UNIQUE KEY `codigo_ensayo_UNIQUE` (`codigo_ensayo`),
-  KEY `fk_responsable_aprobar_idx` (`responsable_aprovacion`),
-  CONSTRAINT `fk_responsable_aprobar` FOREIGN KEY (`responsable_aprovacion`) REFERENCES `personal_laboratorio` (`id_Personal_laboratorio`)
+  KEY `fk_responsable_aprobar_idx` (`responsable_aprobacion`),
+  CONSTRAINT `fk_responsable_aprobar` FOREIGN KEY (`responsable_aprobacion`) REFERENCES `personal_laboratorio` (`id_Personal_laboratorio`)
 ) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
